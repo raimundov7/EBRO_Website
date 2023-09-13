@@ -1,0 +1,76 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("your@email.address", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dropdown Menu</title>
+</head>
+<body>
+  <img style="height: 120px; width: 231px; left: 0%; position: fixed; z-index: 1001; top: 0%;" src="/img/LogoPNG.png"/>
+  <div class="navbar">
+      <!--<p class="LOGO"><span class="red-letter">E</span>BRO</p>-->
+      <div class="dropdown">
+        <button class="dropbtn">Pedidos</button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">FAQs</button>
+      </div>
+      <div class="dropdown">
+      <button class="dropbtn">Sobre Nosotros</button>
+      </div>
+      <div class="dropdown">
+      <button class="dropbtn">Contacto</button>
+      </div>
+      <div class="dropdown"> 
+          <button class="dropbtn">Más &#9662</button>
+          <div class="dropdown-content">
+            <a href="#">Opcion 1</a>
+            <a href="#">Opcion 2</a>
+            <a href="#">Opcion 3</a>
+            <a href="#">Opcion 4</a>
+            <a href="#">Opcion 5</a>
+            <a href="#">Opcion 6</a>
+          </div>
+      </div>
+  </div>
+  <div class="slideshow">
+    <div id="img" class="slideshow2">
+      <img src="/img/oficina1.jpg"/>
+    </div>
+    <img src="/img/prev.png" class="prev-arrow" onclick="changeSlide(-1)">
+    <img src="/img/next.png" class="next-arrow" onclick="changeSlide(1)">
+       <!-- Flecha derecha -->
+  </div>
+  <div class="slide-indicators">
+    <span class="indicator active"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <!-- Agrega tantos indicadores como imágenes en tu slideshow -->
+  </div>
+  <img style="width: 500px; height: 250px; align-items: center ;" src="/img/LogoPNG.png"/>
+  <div class="AboutUs">
+  </div>
+</body>
+  <script src="script.js"></script>  
+</body>
+</html>
